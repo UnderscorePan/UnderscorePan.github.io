@@ -1,106 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects - Samson Hew</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
     </script>
     <style>
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
         }
-        
-        .fade-in {
-            animation: fadeIn 0.6s ease-out forwards;
+        to {
+          opacity: 1;
+          transform: translateY(0);
         }
-        
-        .scrollbar-thin::-webkit-scrollbar {
-            width: 8px;
-        }
-        
-        .scrollbar-thin::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 4px;
-        }
-        
-        .scrollbar-thin::-webkit-scrollbar-thumb {
-            background: rgba(94, 129, 172, 0.5);
-            border-radius: 4px;
-        }
-        
-        .scrollbar-thin::-webkit-scrollbar-thumb:hover {
-            background: rgba(94, 129, 172, 0.7);
-        }
+      }
+
+      .fade-in {
+        animation: fadeIn 0.6s ease-out forwards;
+      }
+
+      .scrollbar-thin::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .scrollbar-thin::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+      }
+
+      .scrollbar-thin::-webkit-scrollbar-thumb {
+        background: rgba(94, 129, 172, 0.5);
+        border-radius: 4px;
+      }
+
+      .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+        background: rgba(94, 129, 172, 0.7);
+      }
     </style>
-</head>
-<body class="overflow-hidden">
+  </head>
+  <body class="overflow-hidden">
     <!-- Background -->
-    <div class="absolute bg-[url(/bluemountain.webp)] saturate-[1.25] blur-[2px] bg-cover h-screen w-screen -z-10"></div>
-    
-    <div class="flex items-center justify-center min-h-screen p-4">
-        <div class="bg-gray-900/95 p-8 rounded-lg shadow-lg w-full max-w-4xl max-h-[90vh] overflow-y-auto scrollbar-thin fade-in">
-            
-            <!-- Header Section -->
-            <div class="text-center mb-8">
-                <a href="/" class="inline-block mb-4 text-gray-300 hover:text-white transition-colors duration-300">
-                    ← Back to Home
-                </a>
-                <h1 class="text-4xl font-bold text-white mb-2">Featured Projects</h1>
-                <div class="h-1 w-24 bg-blue-400/50 mx-auto mb-4"></div>
-                <p class="text-gray-200 text-lg max-w-2xl mx-auto">
-                    Explore some of my recent work and projects.
-                </p>
-            </div>
-
-            <!-- Projects Section -->
-            <div class="mb-8">
-                <div class="grid md:grid-cols-2 gap-4">
-                    <!-- Project 1 -->
-                    <div class="bg-white/10 p-5 rounded-lg hover:bg-white/15 transition-colors duration-300">
-                        <h3 class="text-xl font-semibold text-white mb-2">ur not supposed to be here</h3>
-                        <p class="text-gray-200 mb-3">
-                            ya0pyayapyap
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-blue-400/50 px-3 py-1 rounded text-sm text-white">React</span>
-                            <span class="bg-blue-400/50 px-3 py-1 rounded text-sm text-white">Node.js</span>
-                            <span class="bg-blue-400/50 px-3 py-1 rounded text-sm text-white">MongoDB</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="bg-white/10 p-5 rounded-lg hover:bg-white/15 transition-colors duration-300">
-                        <h3 class="text-xl font-semibold text-white mb-2">ppp</h3>
-                        <p class="text-gray-200 mb-3">
-                            placeholder
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-blue-400/50 px-3 py-1 rounded text-sm text-white">Vue.js</span>
-                            <span class="bg-blue-400/50 px-3 py-1 rounded text-sm text-white">Firebase</span>
-                            <span class="bg-blue-400/50 px-3 py-1 rounded text-sm text-white">Tailwind</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+    <div
+      class="absolute bg-[url(/bluemountain.webp)] saturate-[1.25] blur-[2px] bg-cover h-screen w-screen -z-10"
+    >
     </div>
-</body>
+
+    <div class="flex items-center justify-center min-h-screen p-4">
+      <div
+        class="bg-gray-900/95 p-8 rounded-lg shadow-lg w-full max-w-4xl max-h-[90vh] overflow-y-auto scrollbar-thin fade-in"
+      >
+        <!-- Header Section -->
+        <div class="text-center mb-8">
+          <a
+            href="/"
+            class="inline-block mb-4 text-gray-300 hover:text-white transition-colors duration-300"
+          >
+            ← Back to Home
+          </a>
+          <h1 class="text-4xl font-bold text-white mb-2">Featured Projects</h1>
+          <div class="h-1 w-24 bg-blue-400/50 mx-auto mb-4"></div>
+          <p class="text-gray-200 text-lg max-w-2xl mx-auto">
+            Explore some of my recent work and projects.
+          </p>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="grid gap-4 md:grid-cols-2">
+          <a
+            href="https://github.com/UnderscorePan/EZFlip"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-white/10 p-5 rounded-lg hover:bg-white/15 transition-colors duration-300 block"
+          >
+            <h3 class="text-xl font-semibold text-white mb-2">
+              EZFlip - Flashcard App
+            </h3>
+            <p class="text-gray-200 mb-3">
+              My final your project during my diploma studies which utilizes
+              gesture recognization to navigate through flashcards.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-400/50 px-3 py-1 rounded text-sm text-white">Python</span>
+              <span class="bg-blue-400/50 px-3 py-1 rounded text-sm text-white">Mediapipe</span>
+            </div>
+          </a>
+
+          <a
+            href="https://underscorepan.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-white/10 p-5 rounded-lg hover:bg-white/15 transition-colors duration-300 block"
+          >
+            <h3 class="text-xl font-semibold text-white mb-2">underscorepan.github.io</h3>
+            <p class="text-gray-200 mb-3">This website! Well, not much to tell you. Take a look around.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-400/50 px-3 py-1 rounded text-sm text-white">Astro</span>
+              <span class="bg-blue-400/50 px-3 py-1 rounded text-sm text-white">Tailwind CSS</span>
+              <span class="bg-blue-400/50 px-3 py-1 rounded text-sm text-white">Howler.js</span>
+            </div>
+          </a>
+        </div>
+
+    </div>
+  </body>
 </html>
