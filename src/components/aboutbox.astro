@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Samson Hew</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        
+        .scrollbar-thin::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .scrollbar-thin::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+        
+        .scrollbar-thin::-webkit-scrollbar-thumb {
+            background: rgba(94, 129, 172, 0.5);
+            border-radius: 4px;
+        }
+        
+        .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+            background: rgba(94, 129, 172, 0.7);
+        }
+    </style>
+</head>
+<body class="overflow-hidden">
+    <!-- Background -->
+    <div class="absolute bg-[url(/bluemountain.webp)] saturate-[1.25] blur-[2px] bg-cover h-screen w-screen -z-10"></div>
+    
+    <div class="flex items-center justify-center min-h-screen p-4">
+        <div class="bg-gray-900/95 p-8 rounded-lg shadow-lg w-full max-w-4xl max-h-[90vh] overflow-y-auto scrollbar-thin fade-in">
+            
+            <!-- Header Section -->
+            <div class="text-center mb-8">
+                <a href="/" class="inline-block mb-4 text-gray-300 hover:text-white transition-colors duration-300">
+                    ← Back to Home
+                </a>
+                <h1 class="text-4xl font-bold text-white mb-2">About Me</h1>
+                <div class="h-1 w-24 bg-blue-400/50 mx-auto mb-4"></div>
+                <p class="text-gray-200 text-lg max-w-2xl mx-auto">
+                    Passionate developer and creative problem solver with expertise in building innovative solutions.
+                </p>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-semibold text-white mb-4">Skills & Technologies</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div class="bg-white/10 px-4 py-2 rounded-lg text-center text-gray-200 hover:bg-blue-400/50 transition-colors duration-300">
+                        JavaScript
+                    </div>
+                    <div class="bg-white/10 px-4 py-2 rounded-lg text-center text-gray-200 hover:bg-blue-400/50 transition-colors duration-300">
+                        React
+                    </div>
+                    <div class="bg-white/10 px-4 py-2 rounded-lg text-center text-gray-200 hover:bg-blue-400/50 transition-colors duration-300">
+                        Python
+                    </div>
+                    <div class="bg-white/10 px-4 py-2 rounded-lg text-center text-gray-200 hover:bg-blue-400/50 transition-colors duration-300">
+                        Node.js
+                    </div>
+                    <div class="bg-white/10 px-4 py-2 rounded-lg text-center text-gray-200 hover:bg-blue-400/50 transition-colors duration-300">
+                        Tailwind CSS
+                    </div>
+                    <div class="bg-white/10 px-4 py-2 rounded-lg text-center text-gray-200 hover:bg-blue-400/50 transition-colors duration-300">
+                        Git
+                    </div>
+                    <div class="bg-white/10 px-4 py-2 rounded-lg text-center text-gray-200 hover:bg-blue-400/50 transition-colors duration-300">
+                        SQL
+                    </div>
+                    <div class="bg-white/10 px-4 py-2 rounded-lg text-center text-gray-200 hover:bg-blue-400/50 transition-colors duration-300">
+                        Docker
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-semibold text-white mb-4">Experience</h2>
+                
+                <div class="space-y-6">
+                    <!-- Experience Item 1 -->
+                    <div class="bg-white/10 p-5 rounded-lg hover:bg-white/15 transition-colors duration-300">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-white">Senior Developer</h3>
+                            <span class="text-gray-300 text-sm">2022 - Present</span>
+                        </div>
+                        <p class="text-blue-400/50 font-medium mb-2">Tech Company Inc.</p>
+                        <p class="text-gray-200">
+                            Led development of scalable web applications, mentored junior developers, and implemented best practices for code quality and performance optimization.
+                        </p>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="bg-white/10 p-5 rounded-lg hover:bg-white/15 transition-colors duration-300">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-white">Full Stack Developer</h3>
+                            <span class="text-gray-300 text-sm">2020 - 2022</span>
+                        </div>
+                        <p class="text-blue-400/50 font-medium mb-2">Startup Solutions</p>
+                        <p class="text-gray-200">
+                            Built full-stack applications using modern frameworks, collaborated with cross-functional teams, and delivered projects on time and within budget.
+                        </p>
+                    </div>
+
+                    <!-- Experience Item 3 -->
+                    <div class="bg-white/10 p-5 rounded-lg hover:bg-white/15 transition-colors duration-300">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-white">Junior Developer</h3>
+                            <span class="text-gray-300 text-sm">2019 - 2020</span>
+                        </div>
+                        <p class="text-blue-400/50 font-medium mb-2">Digital Agency</p>
+                        <p class="text-gray-200">
+                            Developed responsive websites, maintained existing codebases, and learned industry best practices in agile development environments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold text-white mb-4">Education</h2>
+                <div class="bg-white/10 p-5 rounded-lg">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-semibold text-white">Bachelor of Computer Science</h3>
+                        <span class="text-gray-300 text-sm">2015 - 2019</span>
+                    </div>
+                    <p class="text-blue-400 font-medium">University Name</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
